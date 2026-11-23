@@ -1,5 +1,5 @@
 //! The one title key every device gives a game with no store id
-//! (Droidtop/tracker#870; the owner, 2026-11-05: "letters and digits only,
+//! (mytop-project/tracker#870; the owner, 2026-11-05: "letters and digits only,
 //! but with space-to-hyphen conversion. Lutris's standard"): `title2:` and the
 //! title's Lutris slug. "Being a DIK" is `title2:being-a-dik`.
 //!

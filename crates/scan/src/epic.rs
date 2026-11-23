@@ -3,7 +3,7 @@
 //! system, legendary's `installed.json`, which Heroic keeps too.
 //!
 //! A game's key is `epic:<CatalogItemId>`, Epic's catalog id, the id droidtop
-//! gives the same game (Droidtop/tracker#871). Its `AppName`, the key this
+//! gives the same game (mytop-project/tracker#871). Its `AppName`, the key this
 //! scanner gave before, is kept as an alias. When the catalog id cannot be
 //! found, the key is `epic:<AppName>`, as before.
 

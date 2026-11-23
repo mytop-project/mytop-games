@@ -24,7 +24,7 @@
 //!   ROM rules, a Flashpoint install by `flashpoint`.
 //! - A launcher's own folder ([`launcher_folder`]: Battle.net, the EA app,
 //!   Origin, GOG Galaxy's client, Epic's Launcher, Ubisoft Connect) is
-//!   neither a game nor walked (Droidtop/tracker#538); its games are read
+//!   neither a game nor walked (mytop-project/tracker#538); its games are read
 //!   from its own records, and a store tree's games folder is still read.
 //!
 //! A GOG or Steam id the game's own files state (`goggame-<id>.info`,
@@ -214,10 +214,10 @@ pub fn title_and_version(name: &str) -> (String, Option<String>) {
 
 /// A title written as one run of words, `DtSyncTest`, read as the words it is
 /// made of, as droidtop reads a folder's name (`GameTitleParser`,
-/// Droidtop/tracker#282): a space where a lower-case letter meets a capital,
+/// mytop-project/tracker#282): a space where a lower-case letter meets a capital,
 /// and before the last capital of a capital run that starts a word. Only a
 /// name with no space in it. Both ends must make the same words or the same
-/// game is two games (Droidtop/tracker#529).
+/// game is two games (mytop-project/tracker#529).
 pub fn split_run_together(title: &str) -> String {
     if title.contains(' ') {
         return title.to_string();
@@ -835,7 +835,7 @@ mod tests {
         let root = tree(
             "launchers",
             &[
-                // Named for its launcher, whatever it holds (Droidtop/tracker#538).
+                // Named for its launcher, whatever it holds (mytop-project/tracker#538).
                 "battle.net/Battle.net Launcher.exe",
                 "EA Desktop/EA Desktop/EADesktop.exe",
                 // Known by its program.

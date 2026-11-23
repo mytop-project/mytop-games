@@ -32,7 +32,7 @@ pub struct Options {
 mod amazon;
 pub mod apps;
 mod battlenet;
-// Engine detection is lib-engines' (Droidtop/tracker#867); the scan reads it by its old name.
+// Engine detection is mytop-engines' (mytop-project/tracker#867); the scan reads it by its old name.
 use engines_detect as engines;
 mod epic;
 mod flashpoint;
@@ -60,7 +60,7 @@ pub struct Prefix {
 /// One game the scan found, with what save lookups need.
 ///
 /// Made with [`Found::new`] outside this crate, never as a literal, so a new
-/// field is not a breaking change (Droidtop/tracker#867).
+/// field is not a breaking change (mytop-project/tracker#867).
 #[derive(Debug, Clone, Serialize)]
 #[non_exhaustive]
 pub struct Found {
@@ -75,7 +75,7 @@ pub struct Found {
     pub engine: Option<String>,
     /// The game's other keys: the ids this scanner, or an older one, also
     /// knows it by. An Epic game is `epic:<CatalogItemId>` with its
-    /// `epic:<AppName>` here (Droidtop/tracker#871); a program links each to
+    /// `epic:<AppName>` here (mytop-project/tracker#871); a program links each to
     /// `game.key` so what it stored under the old key stays the same game.
     #[serde(skip_serializing_if = "Vec::is_empty")]
     pub aliases: Vec<String>,
@@ -155,7 +155,7 @@ impl Scan {
 }
 
 /// The AppName Heroic names a game's settings file by: its `epic:<AppName>`
-/// alias when its key is Epic's catalog id (Droidtop/tracker#871), else the
+/// alias when its key is Epic's catalog id (mytop-project/tracker#871), else the
 /// id in its key.
 fn heroic_app_name(f: &Found) -> Option<String> {
     let alias = f.aliases.iter().find_map(|a| a.strip_prefix("epic:"));
