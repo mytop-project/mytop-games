@@ -830,7 +830,7 @@ dependencies = [
 
 [[package]]
 name = "games-scan"
-version = "0.4.0"
+version = "0.4.1"
 dependencies = [
  "dirs",
  "engines-detect",
@@ -2239,8 +2239,8 @@ dependencies = [
 
 [[package]]
 name = "sync-core"
-version = "0.2.1"
-source = "git+https://github.com/mytop-project/mytop-sync?tag=v0.2.1#b6ccd80c15fdb3d9145f22475818677dffe1f0cb"
+version = "0.2.2"
+source = "git+https://github.com/mytop-project/mytop-sync?tag=v0.2.2#e54f899730cd15d26601ff6e3a08ef3c78dea1e2"
 dependencies = [
  "age",
  "boringtun",
