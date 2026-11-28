@@ -830,7 +830,7 @@ dependencies = [
 
 [[package]]
 name = "games-scan"
-version = "0.4.1"
+version = "0.4.2"
 dependencies = [
  "dirs",
  "engines-detect",
@@ -2239,8 +2239,8 @@ dependencies = [
 
 [[package]]
 name = "sync-core"
-version = "0.2.2"
-source = "git+https://github.com/mytop-project/mytop-sync?tag=v0.2.2#e54f899730cd15d26601ff6e3a08ef3c78dea1e2"
+version = "0.2.3"
+source = "git+https://github.com/mytop-project/mytop-sync?tag=v0.2.3#0234775933faf02049acfe1eea4267bddb5ca2f1"
 dependencies = [
  "age",
  "boringtun",
@@ -2649,7 +2649,7 @@ version = "0.1.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c2a7b1c03c876122aa43f3020e6c3c3ee5c05081c9a00739faf7503aeba10d22"
 dependencies = [
- "windows-sys 0.61.2",
+ "windows-sys 0.48.0",
 ]
 
 [[package]]
@@ -2724,15 +2724,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1e38bc4d79ed67fd075bcc251a1c39b32a1776bbe92e5bef1f0bf1f8c531853b"
 dependencies = [
  "windows-targets 0.52.6",
-]
-
-[[package]]
-name = "windows-sys"
-version = "0.61.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ae137229bcbd6cdf0f7b80a31df61766145077ddf49416a728b02cb3921ff3fc"
-dependencies = [
- "windows-link",
 ]
 
 [[package]]
