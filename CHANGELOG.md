@@ -5,6 +5,11 @@ All notable changes to mytop-games. Versions follow [Semantic Versioning](https:
 
 ## [Unreleased]
 
+## [0.4.3]
+
+### Changed
+- Use mytop-sync v0.2.4 so the agent family shares the invitation-host cancellation fix and one set of core types. Consumer CI checks the released sync source with this candidate.
+
 ## [0.4.2]
 
 ### Changed
